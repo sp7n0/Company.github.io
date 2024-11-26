@@ -3,6 +3,11 @@
     50% {transform: scale(1.1);}
     100% {transform: scale(1);}
 }
+.m-plus-rounded-1c-bold {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 body {
@@ -10,7 +15,7 @@ body {
     height: 100vh;
     background-color: #ca8341;
     background-size: cover;
-    font-family: "Helvatica-Rounded-Bold";
+    font-family: "plus-rounded-1c-bold";
     font-weight: bold;
 }
 p {
