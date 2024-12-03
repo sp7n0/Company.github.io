@@ -39,7 +39,7 @@ h3 {
 nav {
     display: flex;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1;
 }
@@ -86,6 +86,7 @@ section {
 }
 
 .Home {
+    margin-top: 20vh;
     border-radius: 7vw;
     margin-bottom: 8vh;
 }
@@ -152,9 +153,4 @@ section div a {
 
 .Socials img {
     width: 3vw;
-}
-
-.Dog {
-    opacity: 0.12;
-    width: 1.8vw;
 }
