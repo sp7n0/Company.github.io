@@ -154,3 +154,8 @@ section div a {
 .Socials img {
     width: 3vw;
 }
+
+.Dog {
+    opacity: 0.12;
+    width: 1.8vw;
+}
