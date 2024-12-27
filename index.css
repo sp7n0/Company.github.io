@@ -1,161 +1,149 @@
-@keyframes scale {
-    0% {transform: scale(1);}
-    50% {transform: scale(1.1);}
-    100% {transform: scale(1);}
+/* Author: Sp7n0 (Cool_Boarder) */
+/* Version: 2.0 */
+/* Date: 2024-12-24 */
+
+:root {
+    --BGcolor: #CA8341;
+    --PRIMARYcolor: #faebd7;
+    --SECONDARYcolor: #43311e;
+    --TXTcolor: black;
+    --ACCENTcolor: #68b1e3;
 }
 
 body {
-    width: 99vw;
-    height: 100vh;
-    background-color: #ca8341;
-    background-size: cover;
-    font-family: Helvetica;
+    background-color: var(--BGcolor);
+    color: var(--TXTcolor);
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-}
-
-p {
-    color: black;
-    padding-bottom: 5vh;
-}
-
-h1, h2, h3, h4 {
-    color: black;
-    font-weight: bolder;
-    font-size: x-large;
-}
-
-h1 {
-    font-size: 15vh;
-}
-
-h3 {
-    font-size: 4.3vh;
-    margin: 10vh;
-    border: 1.2vw solid #CA8341;
-    border-radius: 3vw;
-    background-color: #CA8341;
+    font-size: larger;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    top: 0;
-    z-index: 1;
-}
-
-nav, footer {
-    background-color: #CA8341;
-}
-
-footer {
-    display: block;
+    grid-area: 1/1/1/9;
+    align-content: center;
     text-align: center;
+    filter: blur(0px);
+    margin-bottom: 5%;
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-img {
-    border-radius: 2vw;
+.slogan span {
+    color: white;
 }
 
 .header {
-    margin-top: 5vh;
-    display: block;
-    text-align: center;
+    background-color: var(--BGcolor);
+    border: 20px solid var(--BGcolor);
+    border-radius: 25px;
 }
 
-.header a {
-    padding: 0 0.52vw;
-    border: 0.37vw solid #43311E;
-    background-color: #43311E;
-    border-radius: 0.47vw;
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    color: firebrick;
-    animation: scale 2.5s;
-}
-
-section {
-    height: 100vh;
+footer {
+    width: 100%;
+    height: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
-}
-
-.Home {
-    margin-top: 20vh;
-    border-radius: 7vw;
-    margin-bottom: 8vh;
-}
-
-.About {
-    border-radius: 7vw;
-    margin-top: 8vh;
-    margin-bottom: 4vh;
-}
-
-section div a {
-    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #43311e;
     color: white;
-    border: 0.7vw solid #001aff;
-    background-color: #001aff;
-    border-radius: 20vw;
 }
 
-.Chapter-9--The-Part-Where-He-Killes-You {
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    grid-area: 2/1/2/9;
+}
+
+.welcome {
+    background-color: var(--PRIMARYcolor);
+    border-radius: 25px;
+    padding: 20px;
+    grid-area: 2/2/2/4;
+}
+.welcome #body {
     text-align: center;
-    border-radius: 7vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+#welcomeTextBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcomeImage img {
+    display: flex;
+    border-radius: 20px;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    margin-top: 2%;
     background-color: black;
-    margin-bottom: auto;
-    padding: 7vh;
-    overflow: hidden;
+    border-radius: 25px;
+    padding: 20px;
+    grid-area: 3/2/3/4;
+
 }
 
-.Chapter-9--The-Part-Where-He-Killes-You h2 {
-    margin-top: -0.25vh;
-    font-size: 5.5vw;
-    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGRzZ2pidzUxcGN2bTQxMGVjOTZhemtpeHNhdGkwd3o3NXRrOHl0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1gXg8Hrjah7bmm45W7/giphy.webp);
-    background-size: 3.5vw;
+.products #body {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#productHeader {
+    /* background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGRzZ2pidzUxcGN2bTQxMGVjOTZhemtpeHNhdGkwd3o3NXRrOHl0aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1gXg8Hrjah7bmm45W7/giphy.webp);
+    background-size: 10%;
     color: transparent;
-    background-clip: text;
+    background-clip: text; */
+    color: white;
 }
 
-.Product-Review {
-    position: relative;
-    display: block;
-    align-content: center;
+#productImage img {
+    width: 200px;
+    border-radius: 50px;
 }
 
-.Product-Review img {
-    max-height: 100vh;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    width: 17vw;
-    margin-top: -10vh;
+#productImage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
 }
 
-.gradient-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
-}
-
-.Socials {
-    display: block;
-    align-content: center;
-}
-
-.Socials img {
-    width: 3vw;
-}
-
-.Dog {
-    opacity: 0.12;
-    width: 1.8vw;
+@media (max-width: 720px) {
+    body {
+        font-size: small;
+    }
+    nav {
+        height: 200px;
+    }
+    main {
+        grid-area: 2/1/2/9;
+    }
+    #welcomeImage img {
+        width: 230px;
+    }
+    #productImage img {
+        width: 100px;
+    }
 }
