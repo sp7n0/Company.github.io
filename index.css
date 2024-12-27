@@ -26,17 +26,21 @@ nav {
     grid-area: 1/1/1/9;
     align-content: center;
     text-align: center;
-    filter: blur(0px);
     margin-bottom: 5%;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)), url(https://images.pexels.com/photos/346529/pexels-photo-346529.jpeg?cs=srgb&dl=pexels-bri-schneiter-28802-346529.jpg&fm=jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.slogan {
+    color: var(--TXTcolor);
 }
 
 .slogan span {
-    color: white;
+    color: var(--PRIMARYcolor);
 }
 
 .header {
