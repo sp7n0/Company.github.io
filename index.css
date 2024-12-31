@@ -47,7 +47,7 @@ nav {
     color: var(--PRIMARYcolor);
 }
 
-.header {
+.startScreen {
     background-color: var(--BGcolor);
     border: 20px solid var(--BGcolor);
     border-radius: 25px;
@@ -78,7 +78,9 @@ a {
 
 #menu {
     display: flex;
+    justify-content: space-evenly;
     list-style: none;
+    flex-direction: row;
     gap: 20px;
     margin: 0;
     padding: 10px;
