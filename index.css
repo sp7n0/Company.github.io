@@ -4,8 +4,7 @@
 
 @font-face {
     font-family: Helveticafull;
-    src: url("/files/HelveticaRoundedBold.otf");
-    src: url("/Helvetica Rounded Bold.otf");
+    src: url("Helvetica Rounded Bold.otf");
 }
 :root {
     --BGcolor: #CA8341;
