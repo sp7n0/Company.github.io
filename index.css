@@ -81,7 +81,7 @@ a {
     list-style: none;
     gap: 20px;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     background-color: dodgerblue;
 }
 
@@ -144,7 +144,7 @@ main {
     width: 200px;
     border-radius: 10px;
     filter: blur(10px);
-    transition: filter 0.45s ease-in-out;
+    transition: filter 0.3s ease-in-out;
 }
 
 #productImageConstainer img:hover {
