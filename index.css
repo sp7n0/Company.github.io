@@ -145,12 +145,6 @@ main {
 #productImageConstainer img {
     width: 200px;
     border-radius: 10px;
-    filter: blur(10px);
-    transition: filter 0.3s ease-in-out;
-}
-
-#productImageConstainer img:hover {
-    filter: blur(0px);
 }
 
 #productImageConstainer {
@@ -172,7 +166,6 @@ main {
     }
     #productImageConstainer img {
         width: 100px;
-        filter: blur(0px);
     }
     #productImageConstainer {
         display: flex;
