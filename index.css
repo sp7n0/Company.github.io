@@ -82,18 +82,6 @@ nav {
     border-radius: 25px;
 }
 
-footer {
-    width: 100%;
-    height: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    background-color: #43311e;
-    color: white;
-}
-
 a {
     text-decoration: none;
     color: inherit;
