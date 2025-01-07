@@ -24,7 +24,7 @@ body {
     font-size: larger;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 nav {
@@ -37,6 +37,34 @@ nav {
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
+}
+
+.topButton {
+    position: fixed;
+    z-index: 200;
+    bottom: 6%;
+    right: 1%;
+    border: none;
+    border-radius: 10%;
+}
+
+.topButton a {
+    width: 25px;
+    height: 35px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topButton button{
+    border: none;
+    border-radius: 10%;
+    background-color: white;
+    color: var(--TXTcolor);
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4));
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease-in-out;
 }
 
 .slogan {
@@ -97,7 +125,7 @@ main {
     padding: 20px;
     grid-area: 2/2/2/4;
 }
-.welcome #body {
+.welcome #contain {
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -127,7 +155,7 @@ main {
     grid-area: 2/5/2/7;
 }
 
-.products #body {
+.products #contain {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -154,6 +182,53 @@ main {
     gap: 20px;
 }
 
+.special {
+    margin-top: 2%;
+    background-color: black;
+    border-radius: 25px;
+    padding: 20px;
+    grid-area: 2/8/2/10;
+}
+
+.special #contain {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+#specialHeader {
+    color: white;
+}
+
+#specialImageConstainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+#specialImageConstainer img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.about {
+    margin-top: 2%;
+    background-color: var(--PRIMARYcolor);
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    grid-area: 2/2/2/4;
+}
+
+.about #contain {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
 @media (max-width: 720px) {
     body {
         font-size: small;
@@ -165,10 +240,13 @@ main {
         width: 230px;
     }
     #productImageConstainer img {
-        width: 100px;
+        width: 125px;
     }
     #productImageConstainer {
         display: flex;
         flex-wrap: wrap;
+    }
+    #specialImageConstainer img {
+        width: 125px;
     }
 }
